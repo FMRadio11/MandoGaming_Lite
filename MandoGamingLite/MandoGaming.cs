@@ -190,7 +190,8 @@ namespace MandoGamingLite
                 String fragDesc = "";
                 if (FragDebuff.Value)
                 {
-                    LanguageAPI.Add("KEYWORD_SHATTERING", "<style=cKeywordName>Shattering</style><style=cSub><style=cIsDamage>Reduces armor by -25</style> for 2.5 seconds.</style>");
+                    String shatterDesc = "<style=cKeywordName>Shattering</style><style=cSub><style=cIsDamage>Reduces armor by -" + (CustomMando.Value? CShatterDebuff.Value.ToString() : "20") + "</style> for " + (CustomMando.Value ? CShatterTimer.Value.ToString() : "2.5") + " seconds.</style>";
+                    LanguageAPI.Add("KEYWORD_SHATTERING", shatterDesc);
                     fragDesc = fragDesc + "<style=cIsDamage>Shattering</style>. ";
                     FragDef.keywordTokens = new string[] { "KEYWORD_SHATTERING" };
                 }
