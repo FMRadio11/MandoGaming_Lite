@@ -7,7 +7,7 @@ using R2API.Networking;
 namespace MandoGamingLite
 {
     [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.FMRadio11.MGLite", "Mando Gaming (Lite)", "1.0.1")]
+    [BepInPlugin("com.FMRadio11.MGLite", "Mando Gaming (Lite)", "1.0.2")]
     [R2APISubmoduleDependency(nameof(EffectAPI), nameof(LanguageAPI), nameof(LoadoutAPI), nameof(PrefabAPI), nameof(ProjectileAPI), nameof(NetworkingHelpers))]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     public class MandoPlugin : BaseUnityPlugin

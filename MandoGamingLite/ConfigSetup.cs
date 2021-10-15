@@ -64,9 +64,9 @@ namespace MandoGamingLite
                 CDiveStun = MGCustom.Bind<float>("5. Alt Tactical Dive", "Stun Radius", 3.5f, "The radius of the brief stun applied by Alt Tactical Dive.");
                 CArmorBuff = MGCustom.Bind<float>("6. Tactical Dive/Slide", "Armor Value", 100f, "Armor granted by the buff added to Tactical Dive (and optionally Slide).");
                 CSlideJump = MGCustom.Bind<float>("7. Alt Tactical Slide", "Jump Modifier", 1.2f, "How much the jump height of Alt Tactical Slide is modified by.");
-                CSoupDamage = MGCustom.Bind<float>("8. Suppressive Fire", "Shot Damage", 1.25f, "Value that Double Tap uses to determine how quickly spread is applied.");
-                CSoupNumber = MGCustom.Bind<int>("8. Suppressive Fire", "Shot Ammo", 8, "Value that Double Tap uses to determine how quickly spread is applied.");
-                CSoupForce = MGCustom.Bind<float>("8. Suppressive Fire", "Force", 100f, "Value that Double Tap uses to determine how quickly spread is applied.");
+                CSoupDamage = MGCustom.Bind<float>("8. Suppressive Fire", "Shot Damage", 1.25f, "Damage per shot of Suppressive Fire.");
+                CSoupNumber = MGCustom.Bind<int>("8. Suppressive Fire", "Shot Ammo", 8, "How many bullets Suppressive Fire has at base.");
+                CSoupForce = MGCustom.Bind<float>("8. Suppressive Fire", "Force", 100f, "How much force each bullet applies.");
                 CSoupShotDuration = MGCustom.Bind<float>("8. Suppressive Fire", "Shot Duration", 0.07f, "How long Suppressive Fire delays for between shots.");
                 CFragDamage = MGCustom.Bind<float>("9. Frag Grenade", "Damage", 8f, "Base damage dealt by Frag Grenade; divide by 4 to get the outer radius damage.");
                 CFragRadius = MGCustom.Bind<float>("9. Frag Grenade", "Radius", 14f, "Total radius of Frag Grenade; inner radius is 1/2 of this value.");
@@ -88,14 +88,14 @@ namespace MandoGamingLite
                 CCookOopsRadius = MGCustom.Bind<float>("ALT1. Cookable Grenade", "Overcook Radius", 11f, "The radius of an overcooked grenade's explosion.");
                 CCookImpactMax = MGCustom.Bind<float>("ALT1. Cookable Grenade", "Impact Maximum", 1f, "How long a Frag Grenade lasts for if thrown immediately.");
                 CCookImpactMin = MGCustom.Bind<float>("ALT1. Cookable Grenade", "Impact Minimum", 0.25f, "How long a Frag Grenade lasts for if fully cooked.");
-                CStickDamage = MGCustom.Bind<float>("ALT2. Sticky Grenade", "Spread Bloom", 7f, "Value that Double Tap uses to determine how quickly spread is applied.");
-                CStickRadius = MGCustom.Bind<float>("ALT2. Sticky Grenade", "Spread Bloom", 12f, "Value that Double Tap uses to determine how quickly spread is applied.");
-                CStickForce = MGCustom.Bind<float>("ALT2. Sticky Grenade", "Spread Bloom", 1000f, "Value that Double Tap uses to determine how quickly spread is applied.");
-                CStickUpwardForce = MGCustom.Bind<float>("ALT2. Sticky Grenade", "Spread Bloom", 600f, "Value that Double Tap uses to determine how quickly spread is applied.");
-                CStickProc = MGCustom.Bind<float>("ALT2. Sticky Grenade", "Spread Bloom", 1f, "Value that Double Tap uses to determine how quickly spread is applied.");
-                CStickSpeed = MGCustom.Bind<float>("ALT2. Sticky Grenade", "Spread Bloom", 50f, "Value that Double Tap uses to determine how quickly spread is applied.");
-                CStickLifetime = MGCustom.Bind<float>("ALT2. Sticky Grenade", "Spread Bloom", 10f, "Value that Double Tap uses to determine how quickly spread is applied.");
-                CStickImpactTimer = MGCustom.Bind<float>("ALT2. Sticky Grenade", "Spread Bloom", 2f, "Value that Double Tap uses to determine how quickly spread is applied.");
+                CStickDamage = MGCustom.Bind<float>("ALT2. Magnet Grenade", "Damage", 7f, "Base damage dealt by Magnet Grenade; divide by 4 to get the outer radius damage.");
+                CStickRadius = MGCustom.Bind<float>("ALT2. Magnet Grenade", "Radius", 12f, "Total radius of Magnet Grenade; inner radius is 1/2 of this value.");
+                CStickForce = MGCustom.Bind<float>("ALT2. Magnet Grenade", "Force", 1000f, "How far outward Magnet Grenade knocks entities.");
+                CStickUpwardForce = MGCustom.Bind<float>("ALT2. Magnet Grenade", "Upward Force", 600f, "How far upward Magnet Grenade knocks entities.");
+                CStickProc = MGCustom.Bind<float>("ALT2. Magnet Grenade", "Proc Coefficient", 1f, "The proc coefficient of Magnet Grenade.");
+                CStickSpeed = MGCustom.Bind<float>("ALT2. Magnet Grenade", "Speed", 50f, "The forward speed of Magnet Grenade.");
+                CStickLifetime = MGCustom.Bind<float>("ALT2. Magnet Grenade", "Lifetime", 10f, "How long Magnet Grenade lasts for normally.");
+                CStickImpactTimer = MGCustom.Bind<float>("ALT2. Magnet Grenade", "Impact Timer", 2f, "How long Magnet Grenade lasts after impact with a surface or entity.");
                 MandoGaming.MandoLog.LogInfo("Custom config setup complete.");
             }
         }
