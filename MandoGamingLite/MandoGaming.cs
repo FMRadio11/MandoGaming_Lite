@@ -87,9 +87,14 @@ namespace MandoGamingLite
                     {
                         self.procCoefficient = CBlastProc.Value;
                         self.maxDistance = CBlastDistance.Value;
+                        self.bulletCount = CBlastCount.Value;
                     }
                     orig(self);
                     if (BlastForce.Value) self.force = (CustomMando.Value ? CBlastForce2.Value : 600f);
+                    if (CustomMando.Value)
+                    {
+
+                    }
                 };
                 SkillDef BlastDef = mandoSL.secondary.skillFamily.variants[1].skillDef;
                 bool CBlastCheck = false;

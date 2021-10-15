@@ -53,7 +53,7 @@ namespace MandoGamingLite
                 CRoundSpeed = MGCustom.Bind<float>("2. Phase Round", "Velocity", 180f, "The forward speed of Phase Round.");
                 CRoundDuration = MGCustom.Bind<float>("2. Phase Round", "Duration", 0.5f, "How long after Phase Round is fired before other skills are usable.");
                 CBlastDamage = MGCustom.Bind<float>("3. Phase Blast", "Damage", 1.85f, "How much damage Phase Blast deals per shot.");
-                CBlastCount = MGCustom.Bind<float>("3. Phase Blast", "Bullet Count", 4f, "How many bullets Phase Blast fires per volley.");
+                CBlastCount = MGCustom.Bind<int>("3. Phase Blast", "Bullet Count", 4, "How many bullets Phase Blast fires per volley.");
                 CBlastForce1 = MGCustom.Bind<float>("3. Phase Blast", "Force 1", 0f, "How much force the first volley of bullets applies.");
                 CBlastForce2 = MGCustom.Bind<float>("3. Phase Blast", "Force 2", 5f, "How much force the second volley of bullets applies.");
                 CBlastProc = MGCustom.Bind<float>("3. Phase Blast", "Proc Coefficient", 0.5f, "The proc coefficient of each bullet in Phase Blast.");
@@ -130,7 +130,7 @@ namespace MandoGamingLite
         public static ConfigEntry<float> CBlastDamage { get; set; }
         public static ConfigEntry<float> CBlastForce1 { get; set; }
         public static ConfigEntry<float> CBlastForce2 { get; set; }
-        public static ConfigEntry<float> CBlastCount { get; set; }
+        public static ConfigEntry<int> CBlastCount { get; set; }
         public static ConfigEntry<float> CBlastDistance { get; set; }
         public static ConfigEntry<float> CBlastProc { get; set; }
         // Tactical Dive
